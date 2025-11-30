@@ -5,6 +5,9 @@
 using namespace std;
 
 int main() {
+
+    TaskManager manager;
+
     while (true) {
         cout << "\n  Pomodoro Timer  \n";
         cout << "1. View Tasks\n";
@@ -12,19 +15,19 @@ int main() {
         cout << "3. Delete Task\n";
         cout << "4. Start Pomodoro\n";
         cout << "5. Exit\n";
-        cout << "Select an option: ";
+        cout << "\nSelect an option: ";
 
         int choice;
         cin >> choice;
 
         if (choice == 1) {
-            viewTasks();
+            manager.viewTasks();
         }
         if (choice == 2) {
-            addTask();
+            manager.addTask();
         }
         if (choice == 3) {
-            deleteTask();
+            manager.deleteTask();
         }
         if (choice == 4) {
             startPomodoro();

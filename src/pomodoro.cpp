@@ -6,6 +6,6 @@ using namespace std;
 
 void startPomodoro() {
     // Pomodoro timer implementation
-    cout << "startPomodoro\n";
+    cout << "ur mother\n";
 
 }

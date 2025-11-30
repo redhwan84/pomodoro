@@ -1,0 +1,46 @@
+
+
+Main: Infintite while loop and goes through 5 different options
+    - view tasks
+    - add tasks
+    - remove tasks 
+    - start pomodoro
+    - end program
+
+
+FUNCTIONS
+
+ViewTasks: Want this to go through the vector that stores all of the tasks and output them as a list
+and showing relevent information about each task such as name, date, importance, etc. EACH TASK IS 
+AN OBJECT.
+
+AddTask: This should create a task object which is added to the vector. Prompts user for details
+such as name, time, importance, etc.
+
+RemoveTask: Remove the task from the vector. Should be specified by the user.
+
+StartPomodoro: Starts a loop that alternates between work time and break time. Break and work time is
+specified by the user.
+
+
+CLASSES
+
+Task: This is the class that is responsible for outlining what a task object should be. Contructor
+should create a task and be prompting the user for information about the task.
+
+
+
+
+
+
+
+THE THREE LAYERS:
+
+    DATA LAYER: The core thing that is dealt with/manipulated. In this case it is the TASK.
+        - What info does this TASK need?
+        - What behavior should it follow?
+    
+    LOGIC LAYER: What to do with the data and how? In this case it is the four functions in main.
+
+    UI/INTERACTION LAYER: How does user interact with the program. In this case it is the user through
+    the terminal via a while loop where the user chooses which to do.
