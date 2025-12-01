@@ -3,6 +3,8 @@
 #ifndef POMODORO_H
 #define POMODORO_H
 
-void startPomodoro();
+#include "tasks.h"
+
+void startPomodoro(Task currentTask);
 
 #endif

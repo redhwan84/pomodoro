@@ -17,6 +17,13 @@ class Task {
         Task(std::string name, int workTime, int breakTime);
 
         std::string getName();
+
+        int getWorkTime();
+
+        int getBreakTime();
+
+        void setWorkTime(int newTime);
+        void setBreakTime(int newTime);
 };
 
 class TaskManager {
@@ -28,6 +35,8 @@ class TaskManager {
         void viewTasks();
         void deleteTask();
         void addTask();
+        Task getTask(int taskNumber);
+        bool isEmpty();
 
 };
 
